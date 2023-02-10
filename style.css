@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup{
+    width: 300px;
+}
+
+:where(.picker, .options, .color, #colorsList){
+    display: flex;
+    align-items: center;
+}
+
+.picker{
+    height: 150px;
+    background-color: #121212;
+    justify-content: center;
+}
+
+#colorPickerBtn, .clearBtn, .heading{
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+#colorPickerBtn{
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 16px 28px;
+    outline: none;
+    border: none;
+    background-color: rgb(174 55 240);
+}
+
+.options{
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.options, #colorsList{
+    margin: 0 8px;
+}
+
+.clearBtn{
+    color: blue;
+}
+
+#colorPickerBtn, .clearBtn, li{
+    cursor: pointer;
+}
+
+.rect{
+    margin: 0 6px;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 5px;
+}
+
+#colorsList{
+    flex-wrap: wrap;
+}
+
+li{
+    width: calc(100%/3);
+    margin: 5px 0;
+}
+
+.hide{
+    display: none;
+}
